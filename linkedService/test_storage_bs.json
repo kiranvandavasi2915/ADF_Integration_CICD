@@ -1,0 +1,18 @@
+{
+	"name": "test_storage_bs",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobStorage",
+		"typeProperties": {
+			"connectionString": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "test_kv_ls",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "test-sc"
+			}
+		}
+	}
+}
