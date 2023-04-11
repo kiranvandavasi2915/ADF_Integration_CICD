@@ -1,0 +1,21 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "test-cicd-datafactory"
+		},
+		"test_kv_ls_properties_typeProperties_baseUrl": {
+			"value": "https://test-cicd-kv.vault.azure.net/"
+		},
+		"test_storage_bs_properties_typeProperties_connectionString_secretName": {
+			"value": "test-sc"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
